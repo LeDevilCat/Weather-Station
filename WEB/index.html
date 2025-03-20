@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sääasema - Kojelauta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sääaseman Kojelauta</h1>
+    </header>
+    <main>
+        <section class="weather-data">
+            <h2>Nykyiset sääolosuhteet</h2>
+            <p><strong>Tuulen nopeus:</strong> <span id="wind-speed">--</span> m/s</p>
+            <p><strong>Tuulen suunta:</strong> <span id="wind-direction">--</span>°</p>
+        </section>
+        <section class="charts">
+            <div>
+                <h2>Tuulen nopeus ajan myötä</h2>
+                <canvas id="windSpeedChart"></canvas>'
+            </div>
+            <div>
+                <h2>Tuulen suunnan jakauma</h2>
+                <canvas id="windDirectionChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="windSpeedChart.js"></script>
+    <script src="windDirectionChart.js"></script>
+</body>
+</html>
