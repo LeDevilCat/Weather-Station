@@ -1,0 +1,78 @@
+@import url("https://use.typekit.net/yup4bjk.css");
+
+body {
+    font-family: neue-haas-unica, arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #4e008e; /* TUNI Primary Violet */
+    color: #82c8f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Weather Data Section */
+.weather-data {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Charts Section */
+.charts {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    color: #4e008e; /* TUNI Primary Violet */
+    font-size: 1.5em;
+}
+
+/* Buttons and Links */
+button {
+    background-color: #82c8f0; /* TUNI Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #cf286f; /* TUNI Fuchsia */
+}
+
+.charts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.charts div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
