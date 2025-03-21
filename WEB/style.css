@@ -10,21 +10,22 @@ body {
     padding: 0;
 }
 
-/* Header */
+/* Ylätunniste */
 header {
     background-color: #4e008e; /* TUNI Primary Violet */
     color: #82c8f0;
     padding: 20px;
     text-align: center;
     font-size: 1.25em;
+    position: sticky;
 }
 
-/* Main Content */
+/* Pääsisältö */
 main {
     padding: 20px;
 }
 
-/* Weather Data Section */
+/* Säädatan osio */
 .weather-data {
     background-color: #ffffff;
     border: 1px solid #cccccc;
@@ -34,7 +35,12 @@ main {
     text-align: center;
 }
 
-/* Charts Section */
+.weather-data canvas {
+    max-height: 66%;
+    width: auto;
+}
+
+/* Kaavioiden osio */
 .charts {
     background-color: #ffffff;
     border: 1px solid #cccccc;
@@ -43,13 +49,13 @@ main {
     text-align: center;
 }
 
-/* Headings */
+/* Otsikot */
 h2 {
     color: #4e008e; /* TUNI Primary Violet */
     font-size: 1.5em;
 }
 
-/* Buttons and Links */
+/* Painikkeet ja linkit */
 button {
     background-color: #82c8f0; /* TUNI Blue */
     color: white;
@@ -63,16 +69,19 @@ button:hover {
     background-color: #cf286f; /* TUNI Fuchsia */
 }
 
-.charts{
+.charts {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.charts div{
+.charts div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 50%;
+    height: auto;
 }
