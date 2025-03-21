@@ -8,28 +8,32 @@
 </head>
 <body>
     <header>
-        <h1>Sääaseman Kojelauta</h1>
+        <h1>Tunkiokoodarien Sääasema</h1>
     </header>
     <main>
         <section class="weather-data">
             <h2>Nykyiset sääolosuhteet</h2>
             <p><strong>Tuulen nopeus:</strong> <span id="wind-speed">--</span> m/s</p>
-            <p><strong>Tuulen suunta:</strong> <span id="wind-direction">--</span>°</p>
+            <p><strong>Tuulen suunta:</strong> <span id="wind-direction">--</span></p>
+            <canvas id="windSpeedCompass"></canvas>
         </section>
         <section class="charts">
             <div>
                 <h2>Tuulen nopeus ajan myötä</h2>
-                <canvas id="windSpeedChart"></canvas>'
+                <canvas id="windSpeedChart"></canvas>
             </div>
             <div>
-                <h2>Tuulen suunnan jakauma</h2>
+                <h2>Tuulen nopeus ja suunta</h2>
                 <canvas id="windDirectionChart"></canvas>
             </div>
         </section>
     </main>
+
+    <!-- JavaScript-tiedostot -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
-    <script src="windSpeedChart.js"></script>
-    <script src="windDirectionChart.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/windSpeedChart.js"></script>
+    <script src="JavaScript/windDirectionChart.js"></script>
+    <script src="JavaScript/windSpeedCompass.js"></script>
 </body>
 </html>
